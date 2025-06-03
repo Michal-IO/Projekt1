@@ -9,4 +9,5 @@ public class AppTest {
         App app = new App();
         assertEquals(5, app.add(2, 3));
     }
+    distribution:sonarcloud
 }
