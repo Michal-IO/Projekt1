@@ -53,3 +53,4 @@ jobs:
           projectKey: Projekt1
 
           token: ${{ secrets.SONAR_TOKEN }} 
+          distribution: sonarcloud 
