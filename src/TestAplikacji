@@ -1,0 +1,17 @@
+package com.example;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class TestAplikacji {
+
+    @Test
+    void testPoprawneDodawanie() {
+        assertEquals(2, 1 + 1);  // ten test przejdzie (1 + 1 = 2)
+    }
+
+    @Test
+    void testBledneDodawanie() {
+        assertEquals(3, 1 + 1);  // ten test nie przejdzie (1 + 1 != 3)
+    }
+}
