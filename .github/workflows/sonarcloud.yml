@@ -1,3 +1,5 @@
+ 
+
 name: SonarCloud Analysis 
 
  
@@ -40,6 +42,8 @@ jobs:
 
           java-version: '17' 
 
+          distribution: 'temurin'  # ← tylko tu się podaje distribution! 
+
  
 
       - name: SonarCloud Scan 
@@ -50,7 +54,6 @@ jobs:
 
           organization: Michal-IO 
 
-          projectKey: Projekt1
+          projectKey: Projekt1 
 
           token: ${{ secrets.SONAR_TOKEN }} 
-          distribution: sonarcloud 
