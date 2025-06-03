@@ -8,7 +8,7 @@ On:
 
     Branches: 
 
-      - main 
+    Main 
 
   Pull_request: 
 
@@ -28,13 +28,13 @@ Jobs:
 
     Steps: 
 
-      - name: Checkout code 
+    Name: Checkout code 
 
         Uses: actions/checkout@v3 
 
  
 
-      - name: Set up Java 
+    Name: Set up Java 
 
         Uses: actions/setup-java@v3 
 
@@ -46,13 +46,13 @@ Jobs:
 
  
 
-      - name: Build with Maven 
+    Name: Build with Maven 
 
         Run: mvn -B clean verify 
 
  
 
-      - name: SonarCloud Scan 
+    Name: SonarCloud Scan 
 
         Uses: SonarSource/sonarqube-scan-action@v5 
 
