@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
-          source: target/myapp.jar
+          source: target/Projekt_IO.jar
           target: /home/ubuntu/inz_opr
 
       - name: Restart app via SSH
@@ -39,4 +39,4 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             pkill -f 'myapp.jar' || true
-            nohup java -jar /home/ubuntu/inz_opr/myapp.jar > /dev/null 2>&1 &
+            nohup java -jar /home/ubuntu/inz_opr/Projekt_IO.jar > /dev/null 2>&1 &
