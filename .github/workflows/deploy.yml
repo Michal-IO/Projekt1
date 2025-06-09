@@ -1,0 +1,42 @@
+name: Deploy to Ubuntu Server
+
+on:
+  push:
+    branches: [ main_new ]  # lub inna gałąź
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build JAR with Maven
+        run: mvn clean package -DskipTests
+
+      - name: Upload .jar via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          source: target/myapp.jar
+          target: /home/ubuntu/inz_opr
+
+      - name: Restart app via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            pkill -f 'myapp.jar' || true
+            nohup java -jar /home/ubuntu/inz_opr/myapp.jar > /dev/null 2>&1 &

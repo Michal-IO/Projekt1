@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13efde3e-f3c1-46d0-babb-398a1b90efa8" name="Changes" comment=" a">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projekt_io/ProjektIoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projekt_io/ProjektIoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projekt_io/ProjektIoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projekt_io/ProjektIoApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +78,18 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "build.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="main_new" />
+    </force-push-targets>
+  </component>
   <component name="RunManager">
     <configuration name="ProjektIoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="ci-java-project" />
+      <module name="Projekt_IO" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.projekt_io.ProjektIoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,8 +125,18 @@
       <workItem from="1748938841123" duration="14000" />
       <workItem from="1748938861101" duration="15000" />
       <workItem from="1748938947547" duration="919000" />
-      <workItem from="1749483344227" duration="307000" />
+      <workItem from="1749483344227" duration="778000" />
+      <workItem from="1749484149566" duration="2086000" />
     </task>
+    <task id="LOCAL-00001" summary=" a">
+      <option name="closed" value="true" />
+      <created>1749483942011</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749483942011</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value=" a" />
+    <option name="LAST_COMMIT_MESSAGE" value=" a" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
