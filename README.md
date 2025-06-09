@@ -1,6 +1,6 @@
 # Projekt1
-KinfThaDerp - Bassam Mandili
+KinfThaDerp
 
-Michal-IO - Michał Wilk
+Michal-IO
 
-MateuszSO48 - Mateusz Sobiecki
+MateuszSO48
